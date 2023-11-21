@@ -17,6 +17,12 @@
       "name": "Морской герой",
       "description": "Как аквамен, но не из DC",
       "element": "water"
+    },
+    {
+      "id": "0215827c-abf1-4b1e-bccc-7ffc7410c276",
+      "name": "Человек-червь",
+      "description": "Умею бурить любые поверхности",
+      "element": "earth"
     }
   ],
   "filters": [
