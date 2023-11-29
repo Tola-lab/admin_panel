@@ -3,8 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
 
-import {filterFetch} from '../../actions/index';
-import { activeFilterChanged } from '../heroesFilters/heroesFiltersSlice';
+import { activeFilterChanged, fetchFilters } from './heroesFiltersSlice';
 import Spinner from '../spinner/Spinner';
 
 
@@ -16,7 +15,7 @@ const HeroesFilters = () => {
 
     // Запрос на сервер для получения фильтров и последовательной смены состояния
     useEffect(() => {
-        dispatch(filterFetch(request));
+        dispatch(fetchFilters(request));
 
         // eslint-disable-next-line
     }, []);
